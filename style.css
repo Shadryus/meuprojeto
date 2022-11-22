@@ -1,0 +1,83 @@
+body{ /*todo corpo tera a mesma prop*/
+  font-family: 'Open Sans', sans-serif;
+
+  text-align: center;
+  margin: 0; /* por padrão os navegadores dao um espaco de 8px em cima 
+  pra ficar grudado o conteudo só colocar marin 0 - OBS: isso fez o conteudo ficax redimensionado e colado
+  aumentando o mesmo*/
+}
+
+#hero{
+  width: 592px;
+  margin: 0 auto 72px; /* forma curta shorthand */
+  /* margin: cima direita baixo esquerda; */
+
+  /* acima simplifica tudo isso
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 72px;
+  margin-left: auto; */
+}
+
+#hero img{
+  margin-bottom: 72px;
+}
+
+h1 { 
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal; /*o h1 vem todo bold por padrao*/
+}
+
+h1 span{ /*aplicando ao span dentro do h1*/
+  font-weight: bold;
+}
+
+/* agrupamento d seletores p mesmas propriedades */
+/*body, p, a{ 
+  font-family: 'Open Sans', sans-serif;
+}*/
+
+/* a{
+  font-family: 'Open Sans', sans-serif;
+} */
+
+span, a{
+  color: #FF9900;
+}
+
+p, #footer{
+  color: #7D7987;
+
+  font-size: 14px;
+
+  line-height: 28px;
+}
+
+/* #footer a{
+  margin-right: 28px;
+} */
+#footer a + a{ /*+ = pegue um a que anterior a ele tenha um a*/
+  margin-left: 28px;
+}
+/*Ele basicamente aplica a propriedade as todos os "a" que tenham uma tag "a"
+anteriormente logo só aplica ao Fale Conosco pq tem o "a"
+do Intagram, se houvesse mais algum como localizaçao no final ele afetaria
+o Fale conosco e localização pq tem a anteriormente ja o Intagram não*/
+
+.line{
+  width: 568px;
+  height: 0px;
+
+  margin: 0 auto 8px;
+  /*o auto aqui serve pra ambas lateria ja que nao definimos um 4o valor*/
+
+  border: 1px #ECEFF2 solid;
+}
+
+#balls{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
